@@ -10,10 +10,7 @@ gulp.task(
 	"server",
 	gulp.series(function () {
 		browserSync.init({
-			server: {
-				baseDir: "../",
-				index: "public/pages/index.html",
-			},
+			proxy: "http://localhost:3000",
 		});
 	})
 );

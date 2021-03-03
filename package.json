@@ -1,13 +1,21 @@
 {
-  "name": "test_env",
+  "name": "first-react-project",
   "version": "1.0.0",
-  "description": "custom test and templates environment",
-  "main": "public/pages/index.html",
+  "description": "My first react project (test)",
+  "main": "public/index.html",
   "scripts": {
-    "gulp": "gulp --gulpfile config/gulpfile.js"
+    "gulp": "gulp --gulpfile config/gulpfile.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "author": "Bombazok",
   "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
@@ -15,6 +23,27 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
-    "gulp-terser": "^2.0.1"
+    "gulp-terser": "^2.0.1",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
