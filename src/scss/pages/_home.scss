@@ -1,0 +1,17 @@
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.App,
+.AppClass {
+	width: 60vw;
+}
+
+.Sample {
+	&_image {
+		width: 100%;
+	}
+}
