@@ -6,6 +6,15 @@ class AppClass extends React.Component {
 		count: 0
 	}
 
+	constructor() {
+		super();
+		console.log('constructor');
+	}
+
+	componentDidMount() {
+		console.log('mount');
+	}
+
 	minus = () => {
 		this.setState(current => ({count: current.count - 1}))
 	}
@@ -15,6 +24,8 @@ class AppClass extends React.Component {
 	}
 
 	render() {
+		console.log('render');
+
 		return <div className="AppClass">
 			<h1>Число: {this.state.count}</h1>
 			<button onClick={this.minus}>Minus</button>
