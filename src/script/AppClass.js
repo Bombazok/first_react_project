@@ -1,5 +1,6 @@
 import propTypes from "prop-types";
-import React from "react";
+import React from 'react';
+import axios from 'axios';
 
 class AppClass extends React.Component {
 	state = {
